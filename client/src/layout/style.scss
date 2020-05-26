@@ -1,0 +1,21 @@
+.app-layout{
+  display: flex;
+  flex-direction: column;
+  .app-header {
+    flex: 0 0 70px;
+  }
+  .app-content {
+    flex: 1 1 calc(100vh - 140px);
+    display: flex;
+    flex-direction: row;
+    .app-sider {
+      flex: 0 0 300px; 
+    }
+    .app-main {
+      flex: 1 1 calc(100vw - 300px);
+    }
+  }
+  .app-footer {
+    flex: 0 0 70px;
+  }
+}
