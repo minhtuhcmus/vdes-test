@@ -1,0 +1,11 @@
+{
+  "name": "mongo",
+  "connector": "mongodb",
+  "url": "mongodb+srv://vdes-test:minhtu123@cluster0-bescn.mongodb.net/test",
+  "host": "cluster0-bescn.mongodb.net",
+  "port": 27017,
+  "user": "vdes-test",
+  "password": "minhtu123",
+  "database": "test",
+  "useNewUrlParser": true
+}
