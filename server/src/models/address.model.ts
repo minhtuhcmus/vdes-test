@@ -50,7 +50,7 @@ export class Address extends Entity {
 
 export interface AddressRelations {
   // describe navigational properties here
-  user: UserWithRelations
+  user?: UserWithRelations
 }
 
 export type AddressWithRelations = Address & AddressRelations;

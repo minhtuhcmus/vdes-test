@@ -2,7 +2,6 @@ import axios from 'axios'
 import Qs from 'qs'
 import { API_METHOD } from '_constants';
 // import {getAccessToken} from '../cookie-store'
-
 const makeRequest = async (method, url, headers= {}, data) => {
   headers["Content-Type"] = "application/x-www-form-urlencoded";
   headers["accept"] = "application/json";
@@ -15,7 +14,7 @@ const makeRequest = async (method, url, headers= {}, data) => {
   // }
 
   const config = {
-    baseURL: API_METHOD.SERVER_URL,
+    baseURL: env.process.REACT_API_URI,
     url: `api${url}`,
     // headers: headers,
     method: method,

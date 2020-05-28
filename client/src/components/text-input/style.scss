@@ -1,0 +1,21 @@
+@import '_styles/index.scss';
+.component-text-input{
+  width: 100%;
+  input {
+    &:focus{
+      outline: none;
+    }
+  }
+  .small{
+    @extend .paragraph-4;
+    padding: 8px;
+  }
+  .normal{
+    @extend .paragraph-3;
+    padding: 12px;
+  }
+  .large{
+    @extend .paragraph-2;
+    padding: 12px;
+  }
+}
